@@ -1,0 +1,23 @@
+{
+  "name": "whsm-source-map-repro",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Daniel Playfair Cal",
+  "license": "MIT",
+  "scripts": {
+    "start": "babel-node scripts/serveDev.js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.10.4",
+    "@babel/core": "^7.10.4",
+    "@babel/node": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "babel-loader": "^8.1.0",
+    "koa": "^2.13.0",
+    "memory-fs": "^0.5.0",
+    "source-map-support": "^0.5.19",
+    "webpack": "^4.43.0",
+    "webpack-dev-middleware": "^3.7.2",
+    "webpack-hot-server-middleware": "^0.6.1"
+  }
+}

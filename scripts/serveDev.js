@@ -7,6 +7,10 @@ import webpackHotServerMiddleware, { createKoaHandler } from 'webpack-hot-server
 
 const app = new Koa();
 
+debugger; // This always works
+
+console.log('breakpoint'); // Adding a breakpoint on this line results in the debugger opening the compiled code, and in the wrong place
+
 const compiler = webpack([webpackConfig]);
 compiler.compilers[0].outputFileSystem = new MemoryFs();
 compiler.watch({}, (err, stats) => {
